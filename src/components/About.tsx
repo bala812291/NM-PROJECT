@@ -1,5 +1,6 @@
 import { GraduationCap, Code2 } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import profileImage from "@/assets/profile.jpg";
 
 const About = () => {
   return (
@@ -10,6 +11,18 @@ const About = () => {
             About Me
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+
+          {/* Profile Image */}
+          <div className="flex justify-center mb-12 animate-fade-in">
+            <div className="relative">
+              <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" />
+              <img
+                src={profileImage}
+                alt="BALASIVA B"
+                className="relative w-48 h-48 rounded-full object-cover border-4 border-primary shadow-glow"
+              />
+            </div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-6 shadow-card hover:shadow-glow transition-smooth animate-slide-in-left">
